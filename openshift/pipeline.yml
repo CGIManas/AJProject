@@ -1,0 +1,11 @@
+kind: "BuildConfig"
+apiVersion: "v1"
+metadata:
+  name: "ajproject-pipeline"
+spec:
+  source:
+    git:
+      uri: "https://github.com/CGIManas/AJProject.git"
+  strategy:
+    jenkinsPipelineStrategy:
+      jenkinsfilePath: jenkins/Jenkinsfile
