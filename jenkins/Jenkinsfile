@@ -1,5 +1,7 @@
 pipeline {
-    agent { label 'node' }
+    agent {
+        docker { image 'node:10-alpine' }
+    }
     stages{
         stage ('checkout'){
             steps{
